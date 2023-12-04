@@ -1,0 +1,13 @@
+version: "3"
+services:
+  db:
+    image: postgres:16.1-alpine3.18
+    container_name: pgn-db
+    ports:
+      - 5432:5432
+    volumes:
+      - ./pg-data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_DB: postgres

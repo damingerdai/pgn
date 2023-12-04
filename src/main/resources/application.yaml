@@ -1,0 +1,11 @@
+server:
+  port: 8443
+spring:
+  threads:
+    virtual:
+      enabled: true
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:5432/postgres
+    username: postgres
+    password: 123456
+    driver-class-name: org.postgresql.Driver
